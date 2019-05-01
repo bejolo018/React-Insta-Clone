@@ -6,8 +6,18 @@
 .post-header{
     font-size: 20px;
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid lavender;
     border-radius: 3px;
     width: 63.85%;
     margin-left: 180px;
+}
+
+.post-image{
+    border-radius: 3px;
+}
+
+.post-username{
+    margin-top: 15px;
+    margin-left: -25px;
+    font-weight: bold;
 }
