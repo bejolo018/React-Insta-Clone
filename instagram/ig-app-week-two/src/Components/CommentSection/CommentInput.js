@@ -3,9 +3,9 @@ import './CommentSection.css'
 
 const CommentInput = () => {
   return (
-    <form>
+    <div className='form'>
       <input type="text" placeholder="Add comment... " />
-    </form>
+    </div>
   );
 };
 

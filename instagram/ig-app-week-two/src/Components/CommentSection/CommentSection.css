@@ -3,11 +3,12 @@
     margin-left: 20px;
 }
 
-form{
+.form{
     display: flex;
-    margin-left: 190px;
+    margin-left: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    
 }
 
 .commentsectioncontainer{
@@ -15,4 +16,13 @@ form{
     width: 63.8%;
     margin-left: 180px;
     border-radius: 3px;
+}
+
+.comment-text .user{
+    font-weight: bold;
+    margin-right: 5px; 
+}
+
+.comment-text {
+    margin-top: 20px
 }
