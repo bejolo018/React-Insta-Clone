@@ -1,4 +1,23 @@
-.image-wrapper{
+.search-bar-wrapper{
+    border-bottom: 1px solid #3333;
+    height: 80px;
+    line-height: 70px;
     display: flex;
-    margin-left: 190px;
+    justify-content: space-between;
+}
+
+.image-wrapper{
+    height: 50px;
+}
+
+.social-wrapper{
+    display: flex;
+}
+
+.social{
+    width: 50px;
+}
+
+input{
+    margin-left: 100px;
 }

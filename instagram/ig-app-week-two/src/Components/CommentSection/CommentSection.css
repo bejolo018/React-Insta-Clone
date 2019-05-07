@@ -26,3 +26,13 @@
 .comment-text {
     margin-top: 20px
 }
+
+.commentlike{
+    width: 50px;
+}
+
+.commentbubble{
+    width: 50px;
+    margin-left: 50px;
+    margin-top: -20px;
+}

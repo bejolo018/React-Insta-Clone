@@ -14,6 +14,12 @@ class CommentSection extends React.Component {
   render() {
     return (
       <div className='commentsectioncontainer'>
+        <div className="commentlike">
+          <i className="far fa-heart" />
+        </div>
+        <div className='commentbubble'>
+        <i class="far fa-comment"></i>
+        </div>
         {this.state.comments.map((c, i) => <Comment key={i} comment={c} />)}
         <CommentInput />
       </div>
