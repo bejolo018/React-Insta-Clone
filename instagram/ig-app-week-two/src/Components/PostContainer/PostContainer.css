@@ -4,6 +4,7 @@
 }
 
 .post-header{
+    margin-top: 20px;
     font-size: 20px;
     display: flex;
     border: 1px solid lavender;
@@ -16,8 +17,30 @@
     border-radius: 3px;
 }
 
+
 .post-username{
     margin-top: 15px;
     margin-left: -25px;
+    font-weight: bold;
+}
+
+.commentlike{
+    width: 50px;
+}
+
+.commentbubble{
+    width: 50px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.like-section{
+    margin-left: 180px;
+
+}
+
+.like-section-wrapper{
+    margin-left: -890px;
+    margin-top: 10px;
     font-weight: bold;
 }
