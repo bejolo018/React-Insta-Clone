@@ -1,14 +1,15 @@
 import React from 'react';
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = props => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
-        <img src='iglogo.jpg' className="logo-image" />
+        
       </div>
+
       <div>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="🔎             Search" onKeyDown={props.searchPosts} />
       </div>
     </div>
   );
