@@ -1,12 +1,12 @@
-import React from 'react';
-import { Button, FormGroup, Input} from 'reactstrap';
+import React, {Component} from 'react';
+// import { Button, FormGroup, Input} from 'reactstrap';
 
 class Login extends Component {
     constructor(props){
         super(props);
         this.state ={
-            username='',
-            password=''
+            username:'',
+            password:''
         }
     }
 
@@ -25,16 +25,16 @@ class Login extends Component {
             <form className='login-form'>
             <h3>Welcome To Instagram!</h3>
             <p>Please Login</p>
-            <FormGroup>
-                <Input
+            <formgroup>
+                <input
                     type='text'
                     placeholder='username'
                     value={this.state.username}
                     onChange={this.handleInputChange}
                 />
-            </FormGroup>
-            <FormGroup>
-                <Input
+            </formgroup>
+            <formgroup>
+                <input
                     type='text'
                     placeholder='password'
                     value={this.state.password}
@@ -42,10 +42,10 @@ class Login extends Component {
                     />
 
             <br />
-            <Button color='success' size ='large' onClick={this.handleLoginSubmit}>
+            <button color='success' size ='large' onClick={this.handleLoginSubmit}>
             Log In
-            </Button>
-            </FormGroup>
+            </button>
+            </formgroup>
             </form>
         )
     }
