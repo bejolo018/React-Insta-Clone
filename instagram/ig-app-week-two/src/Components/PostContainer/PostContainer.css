@@ -26,12 +26,14 @@
 
 .commentlike{
     width: 50px;
+    font-size: 30px;
 }
 
 .commentbubble{
     width: 50px;
     margin-left: 50px;
-    margin-top: -20px;
+    margin-top: -40px;
+    font-size: 30px;
 }
 
 .like-section{

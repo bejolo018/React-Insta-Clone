@@ -9,7 +9,7 @@ const SearchBar = props => {
       <i className="fab fa-instagram"></i>
       </div>
       <div>
-        <input type="text" placeholder="🔎             Search" onKeyDown={props.searchPosts} />
+        <input type="text" placeholder="🔎           Search..." onKeyDown={props.searchPosts} />
       </div>
       <div className="social-wrapper">
         <div className="social">

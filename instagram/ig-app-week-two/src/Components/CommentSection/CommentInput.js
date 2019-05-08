@@ -1,11 +1,15 @@
 import React from 'react';
 import './CommentSection.css'
 
-const CommentInput = () => {
+const CommentInput = props => {
   return (
-    <div className='form'>
-      <input type="text" placeholder="Add comment... " />
-    </div>
+    <form>
+      <input type="text" 
+      value={props.comment} 
+      placeholder="Add comment... "
+      onChange={props.changeComment}
+       />
+    </form>
   );
 };
 
