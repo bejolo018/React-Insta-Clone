@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import { Button, FormGroup, Input} from 'reactstrap';
+import { Button, FormGroup, Input} from 'reactstrap';
 
 class Login extends Component {
     constructor(props){
@@ -25,16 +25,16 @@ class Login extends Component {
             <form className='login-form'>
             <h3>Welcome To Instagram!</h3>
             <p>Please Login</p>
-            <formgroup>
-                <input
+            <FormGroup>
+                <Input
                     type='text'
                     placeholder='username'
                     value={this.state.username}
                     onChange={this.handleInputChange}
                 />
-            </formgroup>
-            <formgroup>
-                <input
+            </FormGroup>
+            <FormGroup>
+                <Input
                     type='text'
                     placeholder='password'
                     value={this.state.password}
@@ -42,10 +42,10 @@ class Login extends Component {
                     />
 
             <br />
-            <button color='success' size ='large' onClick={this.handleLoginSubmit}>
+            <Button color='success' size ='large' onClick={this.handleLoginSubmit}>
             Log In
-            </button>
-            </formgroup>
+            </Button>
+            </FormGroup>
             </form>
         )
     }
