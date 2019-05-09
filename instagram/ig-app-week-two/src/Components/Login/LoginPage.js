@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
-import { Button, FormGroup, Input} from 'reactstrap';
+import { Button, FormGroup, Input, Form} from 'reactstrap';
 
 class Login extends Component {
     constructor(props){
         super(props);
         this.state ={
-            username:'',
-            password:''
+            // username:'',
+            // password:''
         }
     }
 
-    handleInputChange = e => {
+    handleLoginChange = e => {
         this.setState({ [e.target.name]: e.target.value });
     };
 
@@ -22,7 +22,7 @@ class Login extends Component {
 
     render (){
         return (
-            <form className='login-form'>
+            <Form className='login-form'>
             <h3>Welcome To Instagram!</h3>
             <p>Please Login</p>
             <FormGroup>
@@ -30,7 +30,7 @@ class Login extends Component {
                     type='text'
                     placeholder='username'
                     value={this.state.username}
-                    onChange={this.handleInputChange}
+                    onChange={this.handleLoginChange}
                 />
             </FormGroup>
             <FormGroup>
@@ -38,7 +38,7 @@ class Login extends Component {
                     type='text'
                     placeholder='password'
                     value={this.state.password}
-                    onChange={this.handleInputChange}
+                    onChange={this.handleLoginChange}
                     />
 
             <br />
@@ -46,7 +46,7 @@ class Login extends Component {
             Log In
             </Button>
             </FormGroup>
-            </form>
+            </Form>
         )
     }
 }
